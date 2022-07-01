@@ -1,6 +1,6 @@
 <?php
 // ****** Modulo de contacto *******
-require_once("header.php"); 
+require_once("../../header.php"); 
 ?> 
 <script type="text/javascript" language="javascript">
   //metodo para cargar el formulario
@@ -69,21 +69,21 @@ require_once("header.php");
         <div class="list-group-item">
           Complete los Siguientes Datos:
         </div>
-
-        <div class="list-group-item">
-          <h4 class="list-group-item-heading">
-    <form class="form-horizontal" id="formDefault">
-        <div class="control-group-inline" style="padding-top: 10px">           
+          <section id="contactForm" style="display: show;">
+ <div class="list-group-item">
+           <h4 class="list-group-item-heading">
+             <form class="form-horizontal" id="formDefault">
+                <div class="control-group-inline" style="padding-top: 10px">           
           
-          <input type="text" class="form-control required redondeado" id="nombre" name="nombre" maxlength="50" placeholder="Nombre" title="Nombre"/>
-        </div>
-        <div class="control-group-inline" style="padding-top: 10px">           
+            <input type="text" class="form-control required redondeado" id="nombre" name="nombre" maxlength="50" placeholder="Nombre" title="Nombre"/>
+              </div>
+              <div class="control-group-inline" style="padding-top: 10px">           
          
-          <input type="email" class="form-control required redondeado" id="correo" name="correo" maxlength="75" placeholder="Correo" title="Correo"/>
-        </div>
-        <div class="control-group-inline" style="padding-top: 10px; padding-bottom: 10px">           
+              <input type="email" class="form-control required redondeado" id="correo" name="correo" maxlength="75" placeholder="Correo" title="Correo"/>
+             </div>
+              <div class="control-group-inline" style="padding-top: 10px; padding-bottom: 10px">           
           
-          <input type="text" class="form-control required redondeado" id="telefono" name="telefono" maxlength="15" placeholder="Teléfono"  title="Teléfono"/>          
+              <input type="text" class="form-control required redondeado" id="telefono" name="telefono" maxlength="15" placeholder="Teléfono"  title="Teléfono"/>          
         </div>
         <button type="button" class="btn btn-default">Cancelar</button>
         <button type="submit" class="btn btn-primary pull-right" title="Enviar los datos">
@@ -153,13 +153,14 @@ require_once("header.php");
           <p class="list-group-item-text">
             Pais +50377550099
           </p>
-          <div>
+         <!--   <div>
             <a href="https://twitter.com/gustabin"><img src="<?php echo SERVER ?>img/logoTwitter.png" alt="Logo Twitter" height="50px" width="50px"></a>
           
           
             <a href="https://www.facebook.com/gustabin2.0"><img src="<?php echo SERVER ?>img/logoFacebook.jpg" alt="Logo Facebook" height="50px" width="50px"></a>
           </div>
-        </div>
+        </div>-->
+
         
         
     </div>
@@ -181,5 +182,5 @@ require_once("header.php");
   </div>
   <!-- /.content-wrapper -->
 <?php
-  require_once("footer.php");
+  require_once("../../footer.php");
 ?>
